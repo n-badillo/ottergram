@@ -8,6 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'lakeshore';
   src: url('fonts/LAKESHOR-webfont.eot');
@@ -18,21 +19,26 @@
   font-weight: normal;
   font-style: normal;
 }
+
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
   font-size: 10px;
   background: rgb(149, 194, 215);
 }
+
 a {
   text-decoration: none;
 }
+
 .main-header {
   flex: 0 1 auto;
 }
+
 .logo-text {
   background: white;
   text-align: center;
@@ -40,11 +46,13 @@ a {
   font-family: lakeshore;
   font-size: 37px;
 }
+
 .main-content {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
 }
+
 .thumbnail-item {
   display: inline-block;
   min-width: 120px;
@@ -54,9 +62,11 @@ a {
   transition: transform 133ms ease-in-out;
 
 }
+
 .thumbnail-item:hover {
   transform: scale(1.2);
 }
+
 .thumbnail-list {
   flex: 0 1 auto;
   order: 2;
@@ -67,10 +77,12 @@ a {
   white-space: nowrap;
   overflow-x: auto;
 }
+
 .thumbnail-image {
   display: block;
   width: 100%;
 }
+
 .thumbnail-title {
   display: block;
   margin: 0;
@@ -79,25 +91,30 @@ a {
   color: rgb(202, 238, 255);
   font-size: 18px;
 }
+
 .detail-image-container {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .detail-image-frame {
   position: relative;
   text-align: center;
 
   transition: transform 333ms cubic-bezier(.28,-0.38,.66,1.17);
 }
+
 .is-tiny {
   transform: scale(0.001);
   transition: transform 0ms;
 }
+
 .detail-image {
   width: 90%;
 }
+
 .detail-image-title {
   position: absolute;
   bottom: -16px;
@@ -107,16 +124,20 @@ a {
   text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
   font-size: 40px;
 }
+
 .hidden-detail .detail-image-container {
   display: none;
 }
+
 .hidden-detail .thumbnail-list {
   flex-direction: column;
   align-items: center;
 }
+
 .hidden-detail .thumbnail-item {
   max-width: 80%;
 }
+
 @media all and (min-width: 768px) {
   .main-content {
     flex-direction: row;
